@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_colls",
+  "info": {
+    "singularName": "new-coll",
+    "pluralName": "new-colls",
+    "displayName": "new-coll"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

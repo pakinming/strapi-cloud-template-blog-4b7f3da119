@@ -50,6 +50,7 @@ module.exports = ({ env }) => {
     },
   };
 
+  console.log(connections[client]);
   return {
     connection: {
       client,
