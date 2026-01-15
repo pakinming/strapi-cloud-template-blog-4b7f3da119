@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lang_multi_multis",
+  "info": {
+    "singularName": "lang-multi-multi",
+    "pluralName": "lang-multi-multis",
+    "displayName": "lang_multi_multi_1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "data_1": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "lang_multi_multi_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lang-multi-multi-2.lang-multi-multi-2"
+    }
+  }
+}

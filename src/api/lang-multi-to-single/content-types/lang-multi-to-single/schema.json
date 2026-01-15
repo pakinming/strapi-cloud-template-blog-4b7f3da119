@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lang_multi_to_singles",
+  "info": {
+    "singularName": "lang-multi-to-single",
+    "pluralName": "lang-multi-to-singles",
+    "displayName": "lang_multi_to_single"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "detail": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::payment.payment"
+    }
+  }
+}

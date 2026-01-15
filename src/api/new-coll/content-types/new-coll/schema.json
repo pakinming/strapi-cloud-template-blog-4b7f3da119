@@ -27,9 +27,11 @@
       "type": "email",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
-      }
+      },
+      "required": true,
+      "unique": true
     },
     "age": {
       "type": "integer",
@@ -38,6 +40,16 @@
           "localized": true
         }
       }
+    },
+    "iot_device1_1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::iot-device.iot-device"
+    },
+    "iot_devices1_many": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::iot-device.iot-device"
     }
   }
 }
